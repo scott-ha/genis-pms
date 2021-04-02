@@ -1,0 +1,52 @@
+<div class="float-right">
+  <a href="#" class="dropdown-toggle arrow-none card-drop" data-toggle="modal" data-target=".bs-example-modal-center">
+    <i class="mdi mdi-dots-vertical"></i>
+  </a>
+  <div
+    class="modal fade bs-example-modal-center"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="myCenterModalLabel"
+    aria-hidden="true"
+    style="display: none"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myCenterModalLabel">title</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-3 modal-line">
+              <p class="default-txt-title text-left">운행모드</p>
+              <p class="default-txt-title text-left">알람</p>
+              <p class="default-txt-title text-left">임계치</p>
+            </div>
+            <div class="col-9 pl-3">
+              <div class="row">
+                <button type="button" class="btn btn-success modal-item">START</button>
+                <button type="button" class="btn btn-danger modal-item">STOP</button>
+                <button type="button" class="btn btn-warning modal-item">RESET</button>
+              </div>
+              <div class="row">
+                  <button type="button" class="btn btn-success modal-item">ON</button>
+                  <button type="button" class="btn btn-danger modal-item">OFF</button>
+              </div>
+              <div class="row">
+                  <p class="modal-item float-left mr-3"><input type="range" class="custom-range"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">요청</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">취소</button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+</div>

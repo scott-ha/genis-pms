@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <% include ./head-meta %>
+  <body data-layout="horizontal" data-topbar="dark">
+    <!-- Begin page -->
+    <div id="wrapper">
+      <% include ./headers %>
+      <!-- ============================================================== -->
+      <!-- Start Page Content here -->
+      <!-- ============================================================== -->
+
+      <div class="content-page content-bg-color pt-5">
+        <div class="content">
+          <!-- Start Content-->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12"><%- include("widgets/widget-top-range", {data:'TABLE'}) %></div>
+              <div class="col-md-9">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card-box table-stick genis-bg-indigo float-left"></div>
+                    <div class="card-box card-table-type1">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <h2 class="genis-table-title">PCS</h2>
+                        </div>
+                        <div class="col-md-10">
+                          <div class="table-responsive">
+                            <table class="table-custom">
+                              <thead>
+                                <tr>
+                                  <th>
+                                    OperationMode
+                                    <p class="thead-dc">(운행 상태)</p>
+                                  </th>
+                                  <th>
+                                    chargingMode
+                                    <p class="thead-dc">(운행 모드)</p>
+                                  </th>
+                                  <th>
+                                    soc
+                                    <p class="thead-dc">(충전량)</p>
+                                  </th>
+                                  <th>
+                                    voltage
+                                    <p class="thead-dc">(전압)</p>
+                                  </th>
+                                  <th>
+                                    current
+                                    <p class="thead-dc">(전류)</p>
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Run</td>
+                                  <td>DisCharging</td>
+                                  <td>50</td>
+                                  <td>725.2</td>
+                                  <td>-68</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="card-box table-stick genis-bg-green float-left"></div>
+                    <div class="card-box card-table-type1">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <h2 class="genis-table-title">PV</h2>
+                        </div>
+                        <div class="col-md-10">
+                          <div class="table-responsive">
+                            <table class="table-custom">
+                              <thead>
+                                <tr>
+                                  <th>
+                                    voltage_in
+                                    <p class="thead-dc">(입력 전압)</p>
+                                  </th>
+                                  <th>
+                                    voltage_out
+                                    <p class="thead-dc">(출력 전압)</p>
+                                  </th>
+                                  <th>
+                                    current_in
+                                    <p class="thead-dc">(입력 전류)</p>
+                                  </th>
+                                  <th>
+                                    current_out
+                                    <p class="thead-dc">(출력 전류)</p>
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>483</td>
+                                  <td>754</td>
+                                  <td>5.1</td>
+                                  <td>1.8</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card-box table-stick genis-bg-yello float-left"></div>
+                    <div class="card-box card-table-type2">
+                      <div class="row mb-gas">
+                        <div class="col-md-5">
+                          <h2 class="genis-table-title">GAS</h2>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="table-responsive">
+                            <table class="table-custom">
+                              <thead>
+                                <tr>
+                                  <th>
+                                    status
+                                    <p class="thead-dc">(상태)</p>
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>normal</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-5">
+                          <h2 class="genis-table-title">UPS</h2>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="table-responsive">
+                            <table class="table-custom">
+                              <thead>
+                                <tr>
+                                  <th>
+                                    soc
+                                    <p class="thead-dc">(충전량)</p>
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>-</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card-box table-stick genis-bg-lgreen float-left"></div>
+                    <div class="card-box card-table-type1">
+                      <h2 class="genis-table-title">ESS</h2>
+                      <div class="table-responsive">
+                        <table class="table-custom">
+                          <thead>
+                            <tr>
+                              <th>
+                                soc
+                                <p class="thead-dc">(ess 충전량)</p>
+                              </th>
+                              <th>
+                                controlMode
+                                <p class="thead-dc">(ess 상태)</p>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>50</td>
+                              <td>stanby</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="card-box table-stick genis-bg-yello float-left"></div>
+                    <div class="card-box card-table-type2">
+                      <h2 class="genis-table-title">IMD</h2>
+                      <div class="table-responsive">
+                        <table class="table-custom">
+                          <thead>
+                            <tr>
+                              <th>
+                                resistance
+                                <p class="thead-dc">(저항)</p>
+                              </th>
+                              <th>
+                                capacitance
+                                <p class="thead-dc">(전기 용량)</p>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>50</td>
+                              <td>stanby</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card-box table-stick genis-bg-yello float-left"></div>
+                    <div class="card-box card-table-type2">
+                      <h2 class="genis-table-title-narrow">Temp1</h2>
+                      <div class="table-responsive mb-2">
+                        <table class="table-custom">
+                          <thead>
+                            <tr>
+                              <th>
+                                temp
+                                <p class="thead-dc">(온도)</p>
+                              </th>
+                              <th>
+                                humid
+                                <p class="thead-dc">(습도)</p>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>70</td>
+                              <td>20</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <h2 class="genis-table-title-narrow">Temp2</h2>
+                      <div class="table-responsive mb-2">
+                        <table class="table-custom">
+                          <thead>
+                            <tr>
+                              <th>
+                                temp
+                                <p class="thead-dc">(온도)</p>
+                              </th>
+                              <th>
+                                humid
+                                <p class="thead-dc">(습도)</p>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>70</td>
+                              <td>20</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <h2 class="genis-table-title-narrow">Temp3</h2>
+                      <div class="table-responsive">
+                        <table class="table-custom">
+                          <thead>
+                            <tr>
+                              <th>
+                                temp
+                                <p class="thead-dc">(온도)</p>
+                              </th>
+                              <th>
+                                humid
+                                <p class="thead-dc">(습도)</p>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>70</td>
+                              <td>20</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card-box table-stick genis-bg-orange float-left"></div>
+                    <div class="card-box card-table-type1">
+                      <h2 class="genis-table-title">EV Chargers</h2>
+                      <div class="table-responsive">
+                        <table class="table-custom table-custom-narrow">
+                          <thead>
+                            <tr>
+                              <th>No.</th>
+                              <th>
+                                status
+                                <p class="thead-dc">(상태)</p>
+                              </th>
+                              <th>
+                                voltage
+                                <p class="thead-dc">(충전전압)</p>
+                              </th>
+                              <th>
+                                current
+                                <p class="thead-dc">(충전전류)</p>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>wait</td>
+                              <td>230</td>
+                              <td>22</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>wait</td>
+                              <td>230</td>
+                              <td>22</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>wait</td>
+                              <td>230</td>
+                              <td>22</td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>wait</td>
+                              <td>230</td>
+                              <td>22</td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>wait</td>
+                              <td>230</td>
+                              <td>22</td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td>wait</td>
+                              <td>230</td>
+                              <td>22</td>
+                            </tr>
+                            <tr>
+                              <td>7</td>
+                              <td>wait</td>
+                              <td>230</td>
+                              <td>22</td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td>wait</td>
+                              <td>230</td>
+                              <td>22</td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td>wait</td>
+                              <td>230</td>
+                              <td>22</td>
+                            </tr>
+                            <tr>
+                              <td>10</td>
+                              <td>wait</td>
+                              <td>230</td>
+                              <td>22</td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td>wait</td>
+                              <td>230</td>
+                              <td>22</td>
+                            </tr>
+                            <tr>
+                              <td>12</td>
+                              <td>wait</td>
+                              <td>230</td>
+                              <td>22</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- container-fluid -->
+        </div>
+        <!-- content -->
+      </div>
+
+      <!-- ============================================================== -->
+      <!-- End Page content -->
+      <!-- ============================================================== -->
+    </div>
+    <!-- END wrapper -->
+
+    <!-- Vendor js -->
+    <script src="assets/js/vendor.min.js"></script>
+
+    <!-- knob plugin -->
+    <script src="assets/libs/jquery-knob/jquery.knob.min.js"></script>
+
+    <!--Morris Chart-->
+    <script src="assets/libs/morris-js/morris.min.js"></script>
+    <script src="assets/libs/raphael/raphael.min.js"></script>
+
+    <!-- Dashboard init js-->
+    <script src="assets/js/pages/dashboard.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.min.js"></script>
+    <!-- Modal-Effect -->
+    <script src="assets/libs/custombox/custombox.min.js"></script>
+  </body>
+</html>

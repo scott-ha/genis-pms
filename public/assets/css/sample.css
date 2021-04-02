@@ -69,7 +69,7 @@ body {
   line-height: 1.5;
   color: #6c757d;
   text-align: left;
-  background-color: #ebeff2;
+  background-color: #f9fafc;
 }
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
@@ -4283,7 +4283,7 @@ input[type="submit"].btn-block {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
-  background-color: #450a3b;
+  background-color: #71b6f9;
   border: 0;
   border-radius: 1rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
@@ -5664,10 +5664,10 @@ a.badge-blue:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 0.625rem;
+  height: 20px;
   overflow: hidden;
   line-height: 0;
-  font-size: 0.675rem;
+  font-size: 20px;
   background-color: #f7f7f7;
   border-radius: 0.25rem;
 }
@@ -6885,14 +6885,14 @@ a.close.disabled {
 }
 .spinner-grow {
   display: inline-block;
-  width: 2rem;
-  height: 2rem;
+  width: 1rem;
+  height: 1rem;
   vertical-align: text-bottom;
   background-color: currentColor;
   border-radius: 50%;
   opacity: 0;
   -webkit-animation: spinner-grow 0.75s linear infinite;
-  animation: spinner-grow 0.75s linear infinite;
+  animation: spinner-grow 1s linear infinite;
 }
 .spinner-grow-sm {
   width: 1rem;
@@ -11033,11 +11033,11 @@ a.text-blue:hover {
 }
 .card-box {
   background-color: #fff;
-  padding: 1.5rem;
+  padding: 16px;
   -webkit-box-shadow: 0 0.75rem 6rem rgba(56, 65, 74, 0.03);
-  box-shadow: 0 0.75rem 6rem rgba(56, 65, 74, 0.03);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   margin-bottom: 24px;
-  border-radius: 0.25rem;
+  border-radius: 16px;
 }
 .card-box .card-drop {
   color: #98a6ad;

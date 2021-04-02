@@ -13,260 +13,84 @@
   </div>
 
   <div class="navbar-custom">
-    <ul class="list-unstyled topnav-menu float-right mb-0">
-      <li class="dropdown notification-list">
-        <!-- Mobile menu toggle-->
-        <a class="navbar-toggle nav-link">
-          <div class="lines">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </a>
-        <!-- End mobile menu toggle-->
-      </li>
-
-      <!-- <li class="d-none d-sm-block">
-          <form class="app-search">
-            <div class="app-search-box">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search..." />
-                <div class="input-group-append">
-                  <button class="btn" type="submit">
-                    <i class="fe-search"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </form>
-        </li> -->
+    <div id="navigation">
+      <!-- Navigation Menu-->
       <ul class="navigation-menu">
-        <li class="has-submenu">
-          <a href="/"><i class="mdi mdi-view-dashboard"></i>icon</a>
+        <li>
+          <div class="dropdown float-left text-center">
+            <a href="#" data-toggle="dropdown" aria-expanded="false">
+              <img src="assets/images/icons/1_PCS.svg" />
+              <p class="icon-title">PCS</p>
+            </a>
+            <% include ./widgets/dropdown-header %>
+          </div>
         </li>
+        <li>
+          <div class="dropdown float-left text-center">
+            <a href="#" data-toggle="dropdown" aria-expanded="false">
+              <img src="assets/images/icons/2_ESS.svg" />
+              <p class="icon-title">ESS</p>
+            </a>
 
-        <li class="has-submenu">
-          <a href="#">
-            <i class="mdi mdi-invert-colors"></i>icon
-            <div class="arrow-down"></div
-          ></a>
-          <ul class="submenu megamenu">
-            <li>
-              <ul>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+            <% include ./widgets/dropdown-header %>
+          </div>
         </li>
-
-        <li class="has-submenu">
-          <a href="#">
-            <i class="mdi mdi-lifebuoy"></i>icon
-            <div class="arrow-down"></div
-          ></a>
-          <ul class="submenu">
-            <li class="has-submenu">
-              <a href="#"
-                >Forms
-                <div class="arrow-down"></div
-              ></a>
-              <ul class="submenu">
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-              </ul>
-            </li>
-            <li class="has-submenu">
-              <a href="#"
-                >Tables
-                <div class="arrow-down"></div
-              ></a>
-              <ul class="submenu">
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+        <li>
+          <div class="dropdown float-left text-center">
+            <a href="#" data-toggle="dropdown" aria-expanded="false">
+              <img src="assets/images/icons/3_PV.svg" />
+              <p class="icon-title">PV</p>
+            </a>
+            <% include ./widgets/dropdown-header %>
+          </div>
         </li>
-
-        <li class="has-submenu">
-          <a href="#">
-            <i class="mdi mdi-chart-donut-variant"></i>icon
-            <div class="arrow-down"></div
-          ></a>
-          <ul class="submenu">
-            <li>
-              <a href="/">menu</a>
-            </li>
-            <li>
-              <a href="/">menu</a>
-            </li>
-            <li>
-              <a href="/">menu</a>
-            </li>
-          </ul>
+        <li>
+          <div class="dropdown float-left text-center">
+            <a href="#" data-toggle="dropdown" aria-expanded="false">
+              <img src="assets/images/icons/4_EV-Charger.svg" />
+              <p class="icon-title">EV Charger</p>
+            </a>
+            <% include ./widgets/dropdown-header %>
+          </div>
         </li>
-
-        <li class="has-submenu">
-          <a href="#">
-            <i class="mdi mdi-cards-outline"></i>icon
-            <div class="arrow-down"></div
-          ></a>
-          <ul class="submenu megamenu">
-            <li>
-              <ul>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">Tasmenukboard</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-                <li>
-                  <a href="/">menu</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+        <li>
+          <div class="dropdown float-left text-center">
+            <a href="#" data-toggle="dropdown" aria-expanded="false">
+              <img src="assets/images/icons/5_Temp.svg" />
+              <p class="icon-title">Temp</p>
+            </a>
+            <% include ./widgets/dropdown-header %>
+          </div>
         </li>
-
-        <!-- <li class="has-submenu">
-          <a href="#">
-            <i class="mdi mdi-card-bulleted-settings-outline"></i>Layouts
-            <div class="arrow-down"></div
-          ></a>
-          <ul class="submenu">
-            <li><a href="layouts-vertical.html">Vertical</a></li>
-            <li>
-              <a href="layouts-menubar-dark.html">Menubar Dark</a>
-            </li>
-            <li>
-              <a href="layouts-center-menu.html">Center Menu</a>
-            </li>
-            <li>
-              <a href="layouts-menu-drop-dark.html">Menu Drop Dark</a>
-            </li>
-            <li>
-              <a href="layouts-preloader.html">Preloader</a>
-            </li>
-            <li>
-              <a href="layouts-normal-header.html">Unsticky Header</a>
-            </li>
-            <li>
-              <a href="layouts-boxed.html">Boxed</a>
-            </li>
-          </ul>
-        </li> -->
+        <li>
+          <div class="dropdown float-left text-center">
+            <a href="#" data-toggle="dropdown" aria-expanded="false">
+              <img src="assets/images/icons/6_Gas.svg" />
+              <p class="icon-title">GAS</p>
+            </a>
+            <% include ./widgets/dropdown-header %>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown float-left text-center">
+            <a href="#" data-toggle="dropdown" aria-expanded="false">
+              <img src="assets/images/icons/7_IMD.svg" />
+              <p class="icon-title">IMD</p>
+            </a>
+            <% include ./widgets/dropdown-header %>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown float-left text-center">
+            <a href="#" data-toggle="dropdown" aria-expanded="false">
+              <img src="assets/images/icons/8_UPS.svg" />
+              <p class="icon-title">UPS</p>
+            </a>
+            <% include ./widgets/dropdown-header %>
+          </div>
+        </li>
       </ul>
-    </ul>
+    </div>
   </div>
   <!-- end Topbar -->
 </header>
