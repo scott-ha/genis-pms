@@ -457,6 +457,6 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .time-form {
   display: inline-block;
-  padding-left: 72px;
+  padding-left: 64px;
 }
 
