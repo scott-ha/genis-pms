@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <% include ./head-meta %>
+  <% include ./common/head-meta %>
   <body data-layout="horizontal" data-topbar="dark">
     <!-- Begin page -->
     <div id="wrapper">
-      <% include ./headers %>
+      <% include ./common/headers %>
       <!-- ============================================================== -->
       <!-- Start Page Content here -->
       <!-- ============================================================== -->
@@ -14,11 +14,15 @@
           <!-- Start Content-->
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-12"><%- include("widgets/widget-top-range", {data:'TABLE'}) %></div>
+              <div class="col-md-12">
+                <%- include("widgets/widget-top-time", {data:'TABLE'}) %>
+              </div>
               <div class="col-md-9">
                 <div class="row">
                   <div class="col-md-12">
-                    <div class="card-box table-stick genis-bg-indigo float-left"></div>
+                    <div
+                      class="card-box table-stick genis-bg-indigo float-left"
+                    ></div>
                     <div class="card-box card-table-type1">
                       <div class="row">
                         <div class="col-md-2">
@@ -67,7 +71,9 @@
                     </div>
                   </div>
                   <div class="col-md-12">
-                    <div class="card-box table-stick genis-bg-green float-left"></div>
+                    <div
+                      class="card-box table-stick genis-bg-green float-left"
+                    ></div>
                     <div class="card-box card-table-type1">
                       <div class="row">
                         <div class="col-md-2">
@@ -115,7 +121,9 @@
               <div class="col-md-3">
                 <div class="row">
                   <div class="col-md-12">
-                    <div class="card-box table-stick genis-bg-yello float-left"></div>
+                    <div
+                      class="card-box table-stick genis-bg-yello float-left"
+                    ></div>
                     <div class="card-box card-table-type2">
                       <div class="row mb-gas">
                         <div class="col-md-5">
@@ -175,7 +183,9 @@
               <div class="col-md-3">
                 <div class="row">
                   <div class="col-md-12">
-                    <div class="card-box table-stick genis-bg-lgreen float-left"></div>
+                    <div
+                      class="card-box table-stick genis-bg-lgreen float-left"
+                    ></div>
                     <div class="card-box card-table-type1">
                       <h2 class="genis-table-title">ESS</h2>
                       <div class="table-responsive">
@@ -203,7 +213,9 @@
                     </div>
                   </div>
                   <div class="col-md-12">
-                    <div class="card-box table-stick genis-bg-yello float-left"></div>
+                    <div
+                      class="card-box table-stick genis-bg-yello float-left"
+                    ></div>
                     <div class="card-box card-table-type2">
                       <h2 class="genis-table-title">IMD</h2>
                       <div class="table-responsive">
@@ -235,7 +247,9 @@
               <div class="col-md-3">
                 <div class="row">
                   <div class="col-md-12">
-                    <div class="card-box table-stick genis-bg-yello float-left"></div>
+                    <div
+                      class="card-box table-stick genis-bg-yello float-left"
+                    ></div>
                     <div class="card-box card-table-type2">
                       <h2 class="genis-table-title-narrow">Temp1</h2>
                       <div class="table-responsive mb-2">
@@ -313,7 +327,9 @@
               <div class="col-md-6">
                 <div class="row">
                   <div class="col-md-12">
-                    <div class="card-box table-stick genis-bg-orange float-left"></div>
+                    <div
+                      class="card-box table-stick genis-bg-orange float-left"
+                    ></div>
                     <div class="card-box card-table-type1">
                       <h2 class="genis-table-title">EV Chargers</h2>
                       <div class="table-responsive">
@@ -428,22 +444,6 @@
     </div>
     <!-- END wrapper -->
 
-    <!-- Vendor js -->
-    <script src="assets/js/vendor.min.js"></script>
-
-    <!-- knob plugin -->
-    <script src="assets/libs/jquery-knob/jquery.knob.min.js"></script>
-
-    <!--Morris Chart-->
-    <script src="assets/libs/morris-js/morris.min.js"></script>
-    <script src="assets/libs/raphael/raphael.min.js"></script>
-
-    <!-- Dashboard init js-->
-    <script src="assets/js/pages/dashboard.init.js"></script>
-
-    <!-- App js -->
-    <script src="assets/js/app.min.js"></script>
-    <!-- Modal-Effect -->
-    <script src="assets/libs/custombox/custombox.min.js"></script>
+    <% include ./common/foot-meta %>
   </body>
 </html>

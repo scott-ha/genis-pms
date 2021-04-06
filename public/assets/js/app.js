@@ -1,11 +1,3 @@
-/*
-Template Name: Adminto - Responsive Bootstrap 4 Admin Dashboard
-Author: CoderThemes
-Website: https://coderthemes.com/
-Contact: support@coderthemes.com
-File: Main Js File
-*/
-
 
 !function ($) {
     "use strict";

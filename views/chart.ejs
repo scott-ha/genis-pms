@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <% include ./head-meta %>
+  <% include ./common/head-meta %>
   <body data-layout="horizontal" data-topbar="dark">
     <!-- Begin page -->
     <div id="wrapper">
-      <% include ./headers %>
+      <% include ./common/headers %>
       <!-- ============================================================== -->
       <!-- Start Page Content here -->
       <!-- ============================================================== -->
@@ -14,7 +14,9 @@
           <!-- Start Content-->
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-12"><%- include("widgets/widget-top-range", {data:'Chart'}) %></div>
+              <div class="col-md-12">
+                <%- include("widgets/widget-top-time", {data:'Chart'}) %>
+              </div>
               <div class="col-md-9">
                 <div class="card-box card-box-type0">
                   <h4 class="genis-card-title">Temp1</h4>
@@ -31,7 +33,7 @@
                 <!-- <div class="row">
                   <div class="col-md-12">
                     <h4 class="header-title mt-0 mb-3">Line Chart</h4>
-                    <div class="chartjs-chart">
+                    <div class="chartjs-chafrt">
                       <canvas id="lineChart-2" height="300"></canvas>
                     </div>
                   </div>
@@ -39,7 +41,9 @@
               </div>
               <div class="col-md-3">
                 <div class="row">
-                  <div class="col-md-12"><% include ./widgets/widget-default %></div>
+                  <div class="col-md-12">
+                    <% include ./widgets/widget-default %>
+                  </div>
                 </div>
               </div>
             </div>
@@ -55,15 +59,10 @@
     </div>
     <!-- END wrapper -->
 
-    <!-- Vendor js -->
-    <script src="assets/js/vendor.min.js"></script>
+    <% include ./common/foot-meta %>
     <!-- Chart JS -->
     <script src="assets/libs/chart-js/Chart.bundle.min.js"></script>
     <!-- Init js -->
-    <script src="assets/js/pages/chartjs.init.js"></script>
-    <!-- App js -->
-    <script src="assets/js/app.min.js"></script>
-    <!-- Modal-Effect -->
-    <script src="assets/libs/custombox/custombox.min.js"></script>
+    <script src="assets/js/chartjs.init.js"></script>
   </body>
 </html>
