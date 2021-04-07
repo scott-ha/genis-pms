@@ -6269,7 +6269,7 @@ a.close.disabled {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid transparent;
-  border-radius: 0.3rem;
+  border-radius: 16px;
   outline: 0;
 }
 .modal-backdrop {
